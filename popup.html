@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8;" >
+        <style type="text/css">
+            body {
+                padding: 32px;
+            }
+            textarea {
+                width: 500px;
+                height: 160px;
+                line-height: 22px;
+                margin-bottom: 20px;
+                padding: 10px;
+                resize: none;
+            }
+						.img-code {
+							  width: 500px;
+                height: 150px;
+                margin-bottom: 20px;
+                padding: 10px;
+								border: 1px solid #457AE6;
+						}
+            .btn-wrap::after {
+                content: '';
+                display: block;
+                visibility: hidden;
+                height: 0;
+                clear: both;
+            }
+            .btn {
+                float: left;
+                display: inline;
+                margin: 0 16px 10px 0px;
+                padding: 5px 26px;
+                border-radius: 4px;
+                background-color: #457AE6;
+                border-color: #457AE6;
+                color: #fff;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+            }
+            .btn:hover {
+                background-color: #204d74;
+                border-color: #122b40;
+                box-shadow: 0 2px 8px 0 rgba(69, 122, 230, 0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <textarea id="textstr" autofocus></textarea>
+        <div class="btn-wrap">
+						<div id="clear-btn" class="btn">清除网址</div>
+            <div id="code-btn" class="btn">转成二维码</div>
+				</div>
+				<div class="img-code">
+					<div id="output"></div>
+				</div>
+        <script src="../js//jquery-1.8.3.js" type="text/javascript"></script>
+				<script src="../js//jquery.qrcode.min.js" type="text/javascript"></script>
+				<script src="../js/popup.js" type="text/javascript"></script>
+    </body>
+</html>
